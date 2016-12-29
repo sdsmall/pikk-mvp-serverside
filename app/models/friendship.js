@@ -7,9 +7,7 @@ var FriendshipSchema  = new Schema({
 	"requester" : { type : ObjectId, ref: 'User' },
     "requestee" : { type : ObjectId, ref: 'User' },
     "requestDate" : Date,
-    "acceptDate" : Date,
-    //status (pending, denied)
-    "status" : String
+    "acceptDate" : Date
 });
 
 module.exports = mongoose.model('Friendship', FriendshipSchema);
